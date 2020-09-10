@@ -4,15 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
  
 trigger:
-  - build-pipeline
+  - '*'
   
-pool:
+  pool:
     vmImage: 'ubuntu-18.04'
     demands:
     - npm
   
   variables:
-    buildConfiguration: 'Release test'
+    buildConfiguration: 'Release'
   
   steps:
   - task: UseDotNet@2
