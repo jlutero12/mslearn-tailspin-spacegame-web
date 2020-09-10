@@ -30,7 +30,7 @@
     displayName: 'Compile Sass assets'
     
   - task: gulp@1
-   displayName: 'Run gulp tasks'
+    displayName: 'Run gulp tasks'
     
   - script: 'echo "$(SpaceGame-Web-CI.), $(115), $(20190329.1.)" > buildinfo.txt'
   displayName: 'Write build info'
